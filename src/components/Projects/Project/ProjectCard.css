@@ -1,0 +1,50 @@
+.project_card  {
+    display: flex;
+    width: 630px;
+    height: 800px;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: background-position 0.5s ease;
+    cursor: pointer;
+}
+
+.project_card:hover {
+    background-position: center;
+    transform: translate3d(0px, -1px, 0px);
+}
+
+.project_card:hover .project_cardDiv {
+    background-color: rgba(30, 30, 30, 0.608);  
+}
+
+.project_card:hover .cards_div {
+    color: #dbdbdb;
+} 
+
+.project_card img {
+    width: 100%;
+}
+
+.project_card > div {
+    width: 100%;
+    height: 100%;
+}
+
+.cards_div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+
+.cards_div > h3 {
+    font-size: 35px;
+    letter-spacing: -1.5px;
+    font-weight: 600;
+}

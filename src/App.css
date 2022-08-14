@@ -1,0 +1,15 @@
+.app {
+    margin: 0;
+}
+
+.components {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.components::-webkit-scrollbar {
+    display: none;
+}
