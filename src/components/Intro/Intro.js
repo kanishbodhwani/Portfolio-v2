@@ -2,7 +2,6 @@ import React from 'react';
 import "./Intro.css";
 import Coder from "../../images/coder.jpg";
 
-
 const Intro = () => {
   return (
     <div className='intro_outerDiv'>

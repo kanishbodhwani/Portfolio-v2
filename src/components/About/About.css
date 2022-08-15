@@ -19,7 +19,7 @@
 .about_me {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 40%;  
     align-items: flex-end;
     justify-content: flex-start;
     padding: 10px;

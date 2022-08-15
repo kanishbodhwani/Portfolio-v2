@@ -1,7 +1,11 @@
 import React from 'react';
 import ProjectCard from './Project/ProjectCard';
 import "./Projects.css";
-import SlackBack from "../../images/slack.jpg";
+import Slack from "../../images/slack.jpg";
+import Insta from "../../images/insta.jpg";
+import Falcons from "../../images/falcons.jpg";
+import Music from "../../images/pop-music.jpg";
+
 
 export default function Projects() {
   return (
@@ -11,10 +15,10 @@ export default function Projects() {
           Personal Projects
         </h1>
         <div className='projects-cards'>
-          <ProjectCard src={SlackBack} name="Slack App" />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard src={Slack} name="Slack App" />
+          <ProjectCard src={Falcons} name="Falcons" />
+          <ProjectCard src={Insta} name="Instagram" />
+          <ProjectCard src={Music} name="PoP Music" />
         </div>
       </div>
     </div>

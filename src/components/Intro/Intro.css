@@ -14,6 +14,7 @@
     margin-top: 20px;
 }
 
+
 .intro_name {
     display: flex;
     flex-direction: column;
@@ -21,7 +22,20 @@
     margin-left: 30px;
     line-height: 1.4em;
     margin-top: 70px;
-    /* background-color: aqua; */
+    animation-name: intro-appear;
+    animation-duration: 0.9s;
+    animation-timing-function: ease;
+}
+
+@keyframes intro-appear {
+    0% {
+        opacity: 0;
+        margin-top: 200px;
+    } 
+    100% {
+        opacity: 1;
+        margin-top: 70px;
+    }
 }
 
 .name2 {
@@ -30,8 +44,9 @@
     letter-spacing: 3px;
     margin-bottom: -30px;    
     color: rgb(109, 109, 109);
-    margin-left: 3px;
+
 }
+
 
 .intro_name > h2 {
     font-size: 60px;
@@ -39,6 +54,7 @@
     font-weight: 600;
     line-height: 1em;
 }
+
 
 .para {
     margin-top: -26px;
@@ -48,6 +64,7 @@
     width: 80%;
 }
 
+
 .intro_name > button {
     border: none;
     width: 100px;
@@ -56,6 +73,7 @@
     color: aliceblue;
     background-color: rgb(51, 99, 231);
     cursor: pointer;
+    margin-top: 7px;
 }
 
 .intro_name > button:hover {
@@ -65,8 +83,21 @@
 .illustration {
     margin-top: 40px;
     width: 1200px;
+    animation-name: illus-appear;
+    animation-duration: 1.5s;
+    animation-timing-function: ease; 
 }
 
 .illustration img{
     width: 100%;
 }
+
+@keyframes illus-appear {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+    

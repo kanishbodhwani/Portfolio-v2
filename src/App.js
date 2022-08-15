@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useState} from "react";
 import './App.css';
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Spinner from "./components/Spinner/Spinner";
 
@@ -15,6 +16,7 @@ const AppComponent = () => {
         <Intro />
         <About />
         <Projects />
+        <Footer />
       </div>
     </div>
   )

@@ -1,5 +1,7 @@
 import React from 'react';
 import "./ProjectCard.css";
+import {BsArrowRightShort} from "react-icons/bs";
+
 
 const ProjectCard = ({src, key, name}) => {
   return (
@@ -7,9 +9,9 @@ const ProjectCard = ({src, key, name}) => {
       <div className='project_cardDiv'>
         <div className='cards_div'>
           <h3> {name} </h3>
-          <div>
-            <p> A web applicaiton for having business conversation and added with features </p>
-            <p> View Github </p>
+          <div className='card_about'>
+            <p> A web applicaiton for having business conversations. Sign up and there you go !</p>
+            <p> View Github <BsArrowRightShort size={"1.7em"} /> </p>
           </div>
         </div>
       </div> 
