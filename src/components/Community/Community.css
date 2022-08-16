@@ -1,0 +1,18 @@
+.community_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.community {
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.community > h1 {
+    font-size: 50px;
+}

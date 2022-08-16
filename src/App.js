@@ -1,12 +1,14 @@
 import React, { lazy, Suspense, useState} from "react";
 import './App.css';
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 import Spinner from "./components/Spinner/Spinner";
 
+const Header = lazy(() => import("./components/Header/Header"));
 const Intro = lazy(() => import("./components/Intro/Intro"));
 const About = lazy(() => import("./components/About/About"));
 const Projects = lazy(() => import("./components/Projects/Projects"));
+const Community = lazy(() => import("./components/Community/Community"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
+
 
 const AppComponent = () => {
   return ( 
@@ -16,6 +18,7 @@ const AppComponent = () => {
         <Intro />
         <About />
         <Projects />
+        <Community />
         <Footer />
       </div>
     </div>

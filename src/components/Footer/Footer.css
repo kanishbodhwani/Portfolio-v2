@@ -1,36 +1,53 @@
 .footer {
     display: flex;
-    /* flex-direction: ; */
+    flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 130px;
     width: 100%;
-    height: 450px;
-    background-color: #2541bd;
+    height: 480px;
+    background-color: #3425bd;
     position: relative;    
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .pre-footer {
     position: absolute;
     background-color: #fafaf6;
-    top: -80px;
+    top: -90px;
     display: flex;
     flex-direction: column;
     width: 80%;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
+    height: 180px;
 }
 
-.pre-footer > h1 {
+.pre-footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-footer > div > h1 {
     font-size: 60px;    
     color: rgb(64, 64, 64);
     cursor: pointer;
 }
 
-.pre-footer > h1:hover {
-    /* text-decoration: underline; */
+.pre-footer > div > h1:hover {  
     color: rgb(79, 79, 79); 
+}
+
+.pre-footer > div > button {
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 2px;
+    color: aliceblue;
+    background-color: rgb(51, 99, 231);
+    cursor: pointer;
 }
 
 .footer_head {
@@ -38,7 +55,7 @@
     width: 80%;
     align-items: center;
     justify-content: space-between;
-    margin-top: -150px;
+    margin-top:  120px;
 }
 
 .footer_head > h3 {
@@ -48,10 +65,33 @@
 
 .footer_socials {
     width: 300px;
-    margin-right: -30px;
     color: aliceblue;
+    margin-right: -30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+}
+
+.footer_main {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    color: rgb(226, 226, 226);
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    /* text-align: center; */
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    color: rgb(226, 226, 226);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright > p {
+    margin-left: 7px;
 }
