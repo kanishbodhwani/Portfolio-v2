@@ -1,14 +1,10 @@
 import React from 'react'
 import "./About.css";
-import AboutImage from "../../images/about.png";
 import {BsLinkedin , BsTwitter, BsGithub} from "react-icons/bs";
 
 export default function About() {
   return (
     <div className='about'>
-      <div className='about_illustration'> 
-        <img src={AboutImage}  alt="" />
-      </div>
       <div className='about_me'>
         <h1> About me </h1>
         <div className='about_socials'>
