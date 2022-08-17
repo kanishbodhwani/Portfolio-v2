@@ -1,7 +1,7 @@
 .tweet_div {
     display: flex;
     background-color: rgb(239, 239, 239);
-    max-width: 700px;
+    width: 700px;
     height: 200px;
     border-radius: 10px;
     flex-direction: column;

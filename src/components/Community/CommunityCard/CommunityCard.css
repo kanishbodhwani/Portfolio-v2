@@ -1,0 +1,26 @@
+.comm_card {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    background-color: rgb(41, 92, 231);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: rgb(240, 240, 240);
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.comm_card:hover {
+    transform: translate3d(0px, -1px, 0px);
+    box-shadow: 0px 4px 5px rgba(16, 42, 109, 0.5);
+}
+
+.comm_card > h4 {
+    font-size: 19px;
+}
+
+.comm_card:nth-child(2), .comm_card:nth-child(4) {
+    margin-left: 100px;
+}

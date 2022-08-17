@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 100vh;
+    background-image: url("../../images/community.jpg");
+    background-position: 500px -160px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .community {
@@ -10,9 +16,19 @@
     height: 100vh;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .community > h1 {
     font-size: 50px;
+}
+
+.communities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 56%;
+    margin-top: 90px; 
+    transform: translateX(-40px);  
 }
