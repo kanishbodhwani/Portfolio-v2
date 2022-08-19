@@ -1,3 +1,8 @@
+a {
+   text-decoration: none;
+   color: inherit; 
+}
+
 .project_card  {
     display: flex;
     width: 630px;
@@ -79,7 +84,17 @@
     font-size: 18px;
 }
 
-.card_about > p:last-of-type {
+.card_about > div {
+    display: flex;
+    align-items: center;
+}
+
+.right_icon {
+    margin-top: 5px;
+}
+
+
+.card_about > div > a{
     margin-top: 10px;
     color: #dbdbdb;
     font-size: 18px;

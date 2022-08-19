@@ -10,11 +10,9 @@ import {
 } from "react-icons/bs";
 import { FaCopyright } from "react-icons/fa";
 
-
-
 export default function Footer() {
   return (
-    <div className='footer'>
+    <div className='footer' id='contact'>
         <div className='pre-footer'>
             <div>
                 <h1> Lets Connect </h1>
@@ -25,11 +23,11 @@ export default function Footer() {
         <div className='footer_head'>
             <h3> Kanish Bodhwani </h3>
             <div className='footer_socials'>
-                <BsLinkedin size={"1.35em"} />
-                <BsTwitter size={"1.35em"} />
-                <BsMedium size={"1.35em"} />
-                <BsGithub size={"1.35em"} />
-                <BsInstagram size={"1.35em"} />
+                <a href='https://github.com/kanishbodhwani' target="_blank" rel='noreferrer'><BsGithub size={"1.35em"} /></a>
+                <a href='https://www.linkedin.com/in/kanish-bodhwani/' target="_blank" rel='noreferrer'> <BsLinkedin size={"1.35em"} /> </a>
+                <a href='https://kanishbodhwani.medium.com/' target="_blank" rel='noreferrer'> <BsMedium size={"1.35em"} /></a> 
+                <a href='https://twitter.com/BodhwaniKanish' target="_blank" rel='noreferrer'> <BsTwitter size={"1.35em"} /></a>
+                <a href='https://www.instagram.com/kanish_bodhwani/' target="_blank" rel='noreferrer'> <BsInstagram size={"1.35em"} /></a>
             </div>
         </div>
         <div className='footer_main'>

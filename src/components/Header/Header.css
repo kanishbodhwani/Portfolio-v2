@@ -51,13 +51,13 @@ header  {
     justify-content: space-between;
 }
 
-
-.navbar ul li {
+.navbar ul li a{
     color: rgb(73, 73, 73);
     cursor: pointer;
+    text-decoration: none;
 }
 
-.navbar ul li:hover {
+.navbar ul li a:hover {
     color: rgb(113, 113, 113);
 }
 

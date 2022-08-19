@@ -61,7 +61,7 @@
 }
 
 
-.intro_name > button {
+.intro_name > a > button {
     border: none;
     width: 100px;
     height: 30px;
@@ -72,7 +72,7 @@
     margin-top: 23px;
 }
 
-.intro_name > button:hover {
+.intro_name > a > button:hover {
     color: rgb(231, 231, 231);
 }
 

@@ -1,8 +1,8 @@
-.comm_card {
+.comm_link{
     display: flex;
     width: 400px;
     height: 80px;
-    background-color: rgb(41, 92, 231);
+    background-color: rgba(41, 92, 231, 0.797);
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
@@ -12,7 +12,14 @@
     transition: all 0.2s ease;
 }
 
-.comm_card:hover {
+.comm_card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comm_link:hover {
     transform: translate3d(0px, -1px, 0px);
     box-shadow: 0px 4px 5px rgba(16, 42, 109, 0.5);
 }
@@ -21,6 +28,6 @@
     font-size: 19px;
 }
 
-.comm_card:nth-child(2), .comm_card:nth-child(4) {
-    margin-left: 100px;
+.comm_link:nth-child(2), .comm_link:nth-child(4) {
+    margin-left: 120px;
 }

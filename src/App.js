@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useState} from "react";
 import './App.css';
 import Spinner from "./components/Spinner/Spinner";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const Header = lazy(() => import("./components/Header/Header"));
 const Intro = lazy(() => import("./components/Intro/Intro"));
@@ -9,19 +10,20 @@ const Projects = lazy(() => import("./components/Projects/Projects"));
 const Community = lazy(() => import("./components/Community/Community"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
 
-
 const AppComponent = () => {
   return ( 
-    <div className="app">
-      <div className='components'>
-        <Header />
-        <Intro />
-        <About />
-        <Projects />
-        <Community />
-        <Footer />
+    <Router>
+      <div className="app">
+        <div className='components'>
+          <Header />
+          <Intro />
+          <About />
+          <Projects />
+          <Community />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Router>
   )
 }
 

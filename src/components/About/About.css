@@ -34,11 +34,11 @@
 
 .icon {
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .icon:hover {
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 .about_para {

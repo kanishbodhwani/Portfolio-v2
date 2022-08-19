@@ -4,13 +4,13 @@ import {BsLinkedin , BsTwitter, BsGithub} from "react-icons/bs";
 
 export default function About() {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
       <div className='about_me'>
         <h1> About me </h1>
         <div className='about_socials'>
-          <BsLinkedin className={"icon"} size={"1.35em"} color="#0077b5" />
-          <BsTwitter className={"icon"} size={"1.35em"} color="#1DA1F2" />
-          <BsGithub className={"icon"} size={"1.35em"} color="#171515" />
+          <a href='https://www.linkedin.com/in/kanish-bodhwani/' target="_blank" rel='noreferrer'> <BsLinkedin className={"icon"} size={"1.35em"} color="#0077b5" /> </a>
+          <a href='https://twitter.com/BodhwaniKanish' target="_blank" rel='noreferrer'> <BsTwitter className={"icon"} size={"1.35em"} color="#1DA1F2" /></a>
+          <a href='https://github.com/kanishbodhwani' target="_blank" rel='noreferrer'><BsGithub className={"icon"} size={"1.35em"} color="#171515" /></a>
         </div>
         <p className='about_para'> 
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
@@ -23,6 +23,5 @@ export default function About() {
         </p> 
       </div>
     </div>
-      
   )
 };

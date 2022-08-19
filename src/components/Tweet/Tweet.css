@@ -22,6 +22,12 @@
     justify-content: space-between;
 }
 
+.twitter_account > button > a {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 .twitter_account > button {
     border: none;
     width: 92px;

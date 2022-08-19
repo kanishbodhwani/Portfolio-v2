@@ -3,19 +3,26 @@ import "./ProjectCard.css";
 import {BsArrowRightShort} from "react-icons/bs";
 
 
-const ProjectCard = ({src, key, name}) => {
+const ProjectCard = ({src, key, name, about, path, github}) => {
   return (
-    <div key={key} className='project_card' style={{backgroundImage: `url(${src})`}}>
-      <div className='project_cardDiv'>
-        <div className='cards_div'>
-          <h3> {name} </h3>
-          <div className='card_about'>
-            <p> A web applicaiton for having business conversations. Sign up and there you go !</p>
-            <p> View Github <BsArrowRightShort size={"1.7em"} /> </p>
+    <a href={path} target="_blank" rel="noreferrer">
+      <div key={key} className='project_card' style={{backgroundImage: `url(${src})`}}>
+        <div className='project_cardDiv'>
+          <div className='cards_div'>
+            <h3> {name} </h3>
+            <div className='card_about'>
+              <p> {about} </p>
+              <div> 
+                <a href={github} target="_blank" rel="noreferrer"> 
+                  <p> View Github </p> 
+                  <p> <BsArrowRightShort size={"1.7em"} className="right_icon" /> </p>  
+                </a>  
+              </div>
+            </div>
           </div>
-        </div>
-      </div> 
-    </div>
+        </div> 
+      </div>
+    </a>
   )
 };
 

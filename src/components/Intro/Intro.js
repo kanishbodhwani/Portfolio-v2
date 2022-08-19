@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link'
 import "./Intro.css";
 import Coder from "../../images/intro.jpg";
 
@@ -16,7 +17,7 @@ const Intro = () => {
             With my ideas, I like creating beautiful products 
             with the greatest UI/UX design.           
           </p>
-          <button> Know More </button>
+          <Link to="#about"> <button>  Know More </button> </Link>
         </div>
         <div className='illustration'>  
           <img src={Coder} alt="" />

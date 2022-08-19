@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useState } from 'react'
 import "./Tweet.css";
 import { FaTwitter } from "react-icons/fa";
 import AccountIcon from "../../images/twitter-icon.jpeg";
@@ -31,7 +31,7 @@ export default function Tweet() {
                     <p> @BodhwaniKanish </p>
                 </div>
             </div>
-            <button> <FaTwitter size={"1em"} className="tweet-icon" color="#fff"/> Follow </button>
+            <button> <a href='https://twitter.com/BodhwaniKanish' target="_blank" rel='noreferrer'> <FaTwitter size={"1em"} className="tweet-icon" color="#fff"/> Follow  </a></button>
         </div>
         <div className='tweet'>
             {/* {tweetsArray.map((el) => {
