@@ -77,3 +77,28 @@
 .tweet-icon {
     margin-right: 5px;
 }
+
+@media only screen and (max-width: 770px){
+    .tweet_div {
+        width: 100%;
+        /* height: ; */
+    }
+}
+
+@media only screen and (max-width: 600px){ 
+    .tweet_div {
+        height: 100%;
+        padding: 14px;
+    }
+
+    .tweet {
+        font-size: 15px;
+    }
+}   
+
+
+@media only screen and (max-width: 480px) {
+    .follow_text {
+        display: none;
+    }
+}

@@ -9,7 +9,7 @@ const Intro = () => {
       <div className='intro'>
         <div className='intro_name'>
           <p className='name2'> KANISH BODHWANI </p>
-          <h2> Full stack web <br /> developer and designer </h2> 
+          <h2 className='fullstack_head'> Full stack web <br /> developer and designer </h2> 
           <p className='para'> 
             I am an enthusiastic <span> full stack web developer </span>  
             who is always curious about projects

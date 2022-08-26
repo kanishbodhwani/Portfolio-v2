@@ -93,7 +93,6 @@ a {
     margin-top: 5px;
 }
 
-
 .card_about > div > a{
     margin-top: 10px;
     color: #dbdbdb;
@@ -101,4 +100,44 @@ a {
     display: flex;
     align-items: center;
     font-family: 'Barlow', sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+    .project_card {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 982px)  {
+    .project_card {
+        width: 650px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .project_card {
+        width: 100%;
+    }
+
+    .project_card:last-of-type {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .project_card {
+        width: 100%;
+    }
+
+    .project_card:last-of-type{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .project_card {
+        background-position: center; 
+    }
 }

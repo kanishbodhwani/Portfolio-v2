@@ -4,7 +4,6 @@
     align-items: center;
     margin-top: 130px;
     width: 100%;
-    height: 480px;
     background-color: #3425bd;
     position: relative;    
     justify-content: flex-start;
@@ -95,3 +94,19 @@
 .copyright > p {
     margin-left: 7px;
 }
+
+
+@media only screen and (max-width: 770px){
+    .pre-footer > div > h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){ 
+    .pre-footer > div > h1 {
+        font-size: 40px;
+    }
+    .pre-footer {
+        height: 150px;
+    }
+}   

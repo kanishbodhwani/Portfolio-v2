@@ -8,6 +8,7 @@
     background-position: 500px -160px;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 50px;
 }
 
 .community {
@@ -31,4 +32,40 @@
     height: 56%;
     margin-top: 90px; 
     transform: translateX(-40px);  
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .community_div {
+        background-position: 200px -20px;
+    }
+}
+
+
+@media only screen and (max-width: 982px) {
+    .community_div::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        display: flex;
+        background-color: #858585;
+        height: 100%;
+        opacity: 0.1;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .community_div {
+        background-position: 20px -10px;
+    }
+}  
+    
+@media only screen and (max-width: 520px) {
+    .communities {
+        transform: translateX(0px);
+    }
+
+    .community > h1 {
+        font-size: 45px;
+    }
 }

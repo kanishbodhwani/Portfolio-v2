@@ -3,6 +3,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 // import { Link } from "react-scroll";
 import "./Header.css";
 import Klogo from  "../../images/k-logo.jpeg";
+import { BiMenu } from "react-icons/bi";
+
 
 function Header() {
     return (
@@ -13,6 +15,9 @@ function Header() {
                 <p> Kanish Bodhwani </p>
             </div>
             <nav className='navbar'>
+                <div className='hamburger_icon'>
+                    <BiMenu size={"2.3em"}/>
+                </div>
                 <ul>
                     <li> <Link to="#about"> About </Link> </li>
                     <li> <Link to="#projects"> Projects </Link> </li>

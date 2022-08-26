@@ -31,7 +31,7 @@ export default function Tweet() {
                     <p> @BodhwaniKanish </p>
                 </div>
             </div>
-            <button> <a href='https://twitter.com/BodhwaniKanish' target="_blank" rel='noreferrer'> <FaTwitter size={"1em"} className="tweet-icon" color="#fff"/> Follow  </a></button>
+            <button> <a href='https://twitter.com/BodhwaniKanish' target="_blank" rel='noreferrer'> <FaTwitter size={"1em"} className="tweet-icon" color="#fff"/> <p> Follow </p> </a></button>
         </div>
         <div className='tweet'>
             {/* {tweetsArray.map((el) => {

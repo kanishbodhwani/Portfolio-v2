@@ -61,4 +61,24 @@ header  {
     color: rgb(113, 113, 113);
 }
 
+.hamburger_icon {
+    display: none;
+}
 
+@media only screen and (max-width: 1042px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .hamburger_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        width: 20px;
+        display: flex;
+        align-items: center;
+    }
+}

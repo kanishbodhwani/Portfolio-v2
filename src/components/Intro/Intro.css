@@ -97,3 +97,64 @@
     }
 }
     
+
+@media only screen and (max-width: 982px) {
+    .illustration {
+        display: none;
+    }
+
+    .intro_name {
+        width: 100%;
+        
+    }
+
+    .intro {
+        background: url("/src/images/intro.jpg");
+        background-position: 200px -300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        transition: all 0.4s ease;
+        width: 100%;
+    }
+
+    .intro::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        display: flex;
+        background-color: #858585;
+        height: 100%;
+        opacity: 0.1;
+    }
+
+    .para {
+        /* font-weight: 600; */
+        width: 40%;
+    }
+
+    .intro_name > a > button {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 757px) { 
+    .para {
+        width: 100%;
+    }
+
+    .intro {
+        background-position: 100px -300px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .intro {
+        background-position: 80px -200px;
+    }
+
+    .intro_name > h2 {
+        font-size: 45px;
+    }
+}

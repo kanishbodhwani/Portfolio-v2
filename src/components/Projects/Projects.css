@@ -28,5 +28,22 @@
     margin-top: 40px;
 }
 
+@media only screen and (max-width: 1300px){
+    .projects {
+        margin-top: 120px;
+    }
+}
 
 
+@media only screen and (max-width: 982px) {
+    .projects-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .projects_div > h1 {
+        font-size: 45px;
+    }
+}
