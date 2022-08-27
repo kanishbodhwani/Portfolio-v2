@@ -40,7 +40,7 @@ const App = () => {
   }, []);
 
   return (
-    <Suspense fallback={"Loading..."}>
+    <Suspense fallback={""}>
       { loading ? <Loader /> : <AppComponent />}
     </Suspense>
   )
