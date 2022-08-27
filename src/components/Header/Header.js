@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState , useRef, useEffect} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 // import { Link } from "react-scroll";
 import "./Header.css";
 import Klogo from  "../../images/k-logo.jpeg";
-import { BiMenu } from "react-icons/bi";
 
 
 function Header() {
+    const [menu, setMenu] = useState(false);
+
+    const toggleMenu = () => setMenu(!menu);
     return (
     <div className='header'>
         <header>
@@ -16,9 +18,22 @@ function Header() {
             </div>
             <nav className='navbar'>
                 <div className='hamburger_icon'>
-                    <BiMenu size={"2.3em"}/>
+                    <div onClick={toggleMenu} className='hamburger'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <ul>
+                {menu ? <div className={`menu ${menu ? 'is-active' : null}`}>
+                    <ul className='mobile_navbar'>
+                        <li> <Link to="#about"> About </Link> </li>
+                        <li> <Link to="#projects"> Projects </Link> </li>
+                        <li> <Link to="#community"> Community </Link> </li>
+                        <li> <a href='https://medium.com/@kanishbodhwani' target="_blank" rel='noreferrer'>  Blog </a> </li>
+                        <li> <Link to="#contact"> Contact </Link> </li>
+                    </ul>
+                </div> : null }
+                <ul className='wide_navbar'>
                     <li> <Link to="#about"> About </Link> </li>
                     <li> <Link to="#projects"> Projects </Link> </li>
                     <li> <Link to="#community"> Community </Link> </li>
