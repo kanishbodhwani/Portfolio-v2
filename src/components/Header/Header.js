@@ -26,11 +26,11 @@ function Header() {
                 </div>
                 {menu ? <div className={`menu ${menu ? 'is-active' : null}`}>
                     <ul className='mobile_navbar'>
-                        <li> <Link to="#about"> About </Link> </li>
-                        <li> <Link to="#projects"> Projects </Link> </li>
-                        <li> <Link to="#community"> Community </Link> </li>
-                        <li> <a href='https://medium.com/@kanishbodhwani' target="_blank" rel='noreferrer'>  Blog </a> </li>
-                        <li> <Link to="#contact"> Contact </Link> </li>
+                        <li onClick={() => setMenu(false)}> <Link to="#about"> About </Link> </li>
+                        <li onClick={() => setMenu(false)}> <Link to="#projects"> Projects </Link> </li>
+                        <li onClick={() => setMenu(false)}> <Link to="#community"> Community </Link> </li>
+                        <li onClick={() => setMenu(false)}> <a href='https://medium.com/@kanishbodhwani' target="_blank" rel='noreferrer'>  Blog </a> </li>
+                        <li onClick={() => setMenu(false)}> <Link to="#contact"> Contact </Link> </li>
                     </ul>
                 </div> : null }
                 <ul className='wide_navbar'>
