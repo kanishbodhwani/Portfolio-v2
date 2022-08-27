@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useState} from "react";
 import './App.css';
 import Spinner from "./components/Spinner/Spinner";
 import { BrowserRouter as Router } from "react-router-dom";
+import Loader from "./components/Loader/Loader";
 
 const Header = lazy(() => import("./components/Header/Header"));
 const Intro = lazy(() => import("./components/Intro/Intro"));
@@ -9,6 +10,7 @@ const About = lazy(() => import("./components/About/About"));
 const Projects = lazy(() => import("./components/Projects/Projects"));
 const Community = lazy(() => import("./components/Community/Community"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
+
 
 const AppComponent = () => {
   return ( 
@@ -28,10 +30,10 @@ const AppComponent = () => {
 }
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useState(() => {
-    let timer = setTimeout(() => setLoading(false), 2000)
+    let timer = setTimeout(() => setLoading(false), 3000)
     return () => {
       clearTimeout(timer);
     }
@@ -39,7 +41,7 @@ const App = () => {
 
   return (
     <Suspense fallback={"Loading..."}>
-      { loading ? <Spinner /> : <AppComponent />}
+      { loading ? <Loader /> : <AppComponent />}
     </Suspense>
   )
 };
