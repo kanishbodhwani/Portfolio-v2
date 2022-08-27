@@ -94,11 +94,17 @@
     .tweet {
         font-size: 15px;
     }
-}   
 
-
-@media only screen and (max-width: 480px) {
     .follow_text {
         display: none;
     }
-}
+
+    .twitter_account > button {
+        width: 50px;
+    }
+
+    .tweet-icon {
+        margin-right: 0px;
+    }
+    
+}   
