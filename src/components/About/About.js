@@ -18,13 +18,13 @@ export default function About() {
             <img src={Aboutpic} alt="" />
         </div>
         <p className='about_para'> 
-          <span> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using </span>
+          <span> I am a dedicated and enthusiastic developer. I've been working as a developer for over a year. I am presently working in a company named KONCIV, where I work on the company's core product, a data visualisation software.  </span>
           <br />
           <br />
-          <span> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum </span>
+          <span> If I'm developing anything, I'll be completely focused on it, even if it takes months. I love designing things, so combining coding with design makes me a full stack developer, allowing me to create aesthetic value-added products that consumers desire. I'm eager to learn about new technologies in the market. </span>
           <br />
           <br />
-          <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</span>
+          <span> I also love writing about leaders, entrepreneurs, millennials, and the nature of the people we live with. Writing is another hobby of mine; I enjoy it because I enjoy reading. I'm a voracious reader. It could be anything from self-help books to blogs or Twitter threads. </span>
         </p> 
       </div>
     </div>
